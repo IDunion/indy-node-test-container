@@ -3,7 +3,7 @@ Provides a Dockerfile that contains the minimal dependencies to execute unit tes
 
 ## Benefits
 - No need to bother about the Python version installed on local machine.
-- No need to include additional package repositories required to retrive required libraries.
+- No need to include additional package repositories required to retrieve required libraries.
 - Executes arbitrary *pytest* unit tests on local code base.
 
 # Getting Started
