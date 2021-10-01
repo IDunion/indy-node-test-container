@@ -44,4 +44,4 @@ Optionally, you can also specify the TEST_PATH as an environment variable (usefu
 # Release Notes
 
 ## 1.0
-Initial version           echo "-p INDY_PLENUM_PATH        Install Indy Plenum from specified path (must resolve to absolute path)"
+Initial version
