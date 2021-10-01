@@ -24,8 +24,6 @@ Provides a Dockerfile that contains the minimal dependencies to execute unit tes
 Before you can execute test on the 'indy-node'code, you have at least to set the following environment variables:
 > INDY_NODE_PATH - Path to the root of 'indy-node' folder (must resolve to an absolute path)
 > 
-> INDY_PLENUM_PATH - Path to the root of 'indy-plenum' folder (must resolve to an absolute path)
-> 
 > DOCKER_IMAGE Tag or ID of the Docker image you built in the first step
 
 Optionally, you can also specify the TEST_PATH as an environment variable (useful if you want the execute the same tests over and over again).
@@ -37,6 +35,8 @@ Optionally, you can also specify the TEST_PATH as an environment variable (usefu
 2. The script provides the following configuration options:
     > -h Prints usage information
     >
+    > -p INDY_PLENUM_PATH Installs Indy Plenum from specified path (must resolve to absolute path)
+    > 
     > -v Activates verbose mode
     > 
     > TEST_PATH Path to test folder, takes precedence over the respective environment variable
@@ -44,4 +44,4 @@ Optionally, you can also specify the TEST_PATH as an environment variable (usefu
 # Release Notes
 
 ## 1.0
-Initial version
+Initial version           echo "-p INDY_PLENUM_PATH        Install Indy Plenum from specified path (must resolve to absolute path)"
